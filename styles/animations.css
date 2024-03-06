@@ -12,3 +12,18 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes active-theme-pointer {
+    
+    from {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
