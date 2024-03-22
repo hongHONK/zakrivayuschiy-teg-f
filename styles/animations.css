@@ -20,10 +20,33 @@
     }
 
     50% {
-        transform: translateX(2px);
+        transform: translateX(4px);
     }
 
     to {
         transform: translateX(0);
+    }
+}
+
+
+@keyframes heart-scale {
+    
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.5;
+    }
+}
+
+@keyframes sparks-opacity {
+    
+    from {
+        opacity: 0;
+    } 
+
+    to {
+        opacity: 1;
     }
 }
