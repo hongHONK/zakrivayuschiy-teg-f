@@ -86,12 +86,12 @@
   border: none;
   font-size: 14px;
   line-height: 1em;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   padding: 0;
 }
 
 .theme-menu__button:hover {
-  opacity: .6;
+  opacity: 0.6;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .theme-menu__button:focus-visible {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
@@ -111,7 +111,7 @@
   background-color: var(--main-color);
   block-size: 2px;
   inline-size: 0;
-  transition: inline-size .5s ease-in-out;
+  transition: inline-size 0.5s ease-in-out;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -121,7 +121,7 @@
 .theme-menu__button:disabled {
   cursor: default;
   pointer-events: none;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {
@@ -163,7 +163,7 @@
 
 .stage-card__title {
   padding: 4px 10px 6px;
-  font-weight: 700;
+  font-weight: var(--variable-font-weight-title);
   font-size: inherit;
   border-block-end: 2px solid var(--main-color);
 }
@@ -183,13 +183,13 @@
   font-family: 'PressStart2P', sans-serif;
   font-size: 14px;
   color: var(--main-color);
-  opacity: .5;
+  opacity: 0.5;
   mix-blend-mode: hard-light;
   text-shadow: 0 0 2px var(--bg-color);
 }
 
 @supports (-webkit-text-stroke: 1px #000) {
-
+  
   .stage-card__image-lable {
     -webkit-text-stroke: 1px var(--bg-color);
     text-shadow: none;
@@ -197,7 +197,7 @@
 }
 
 @supports (text-stroke: 1px #000) {
-
+  
   .stage-card__image-lable {
     text-stroke: 1px var(--bg-color);
     text-shadow: none;
@@ -210,7 +210,7 @@
 
 .stage-card__text-container {
   padding: 25px;
-  font-weight: 465;
+  font-weight: var(--variable-font-weight-text);
   line-height: 21px;
   font-size: inherit;
   border-block-start: 2px solid var(--main-color);
@@ -232,13 +232,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   appearance: none;
   padding: 0;
   background-color: transparent;
 
   border: 2px solid transparent;
-  transition: border-color .3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .stage-card__like-icon-button:focus {
@@ -252,22 +252,22 @@
 }
 
 .main-body {
-  transition: fill .3s;
+  transition: fill 0.3s;
 }
 
 .stage-card__like-icon-button:hover .main-body {
-  transition-delay: .05s;
+  transition-delay: 0.05s;
   fill: var(--main-color);
 }
 
 .stage-card__like-icon-button:active .main-body {
-  transition-delay: .05s;
+  transition-delay: 0.05s;
   fill: var(--heart-main-body-color);
 }
 
 .core {
-  transition: fill .3s;
-  transition-delay: .03s;
+  transition: fill 0.3s;
+  transition-delay: 0.03s;
 }
 
 .stage-card__like-icon-button:hover .core {
@@ -285,8 +285,8 @@
 }
 
 .contour {
-  transition: fill .3s;
-  transition-delay: .06s;
+  transition: fill 0.3s;
+  transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .contour {
@@ -294,7 +294,7 @@
 }
 
 .like-icon.is-liked .main-body {
-  transition-delay: .05s;
+  transition-delay: 0.05s;
   fill: var(--heart-main-body-color);
 }
 
@@ -305,13 +305,13 @@
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: heart-scale .3s 2 alternate ease-in;
-  animation-delay: .1s;
+  animation: heart-scale 0.3s 2 alternate ease-in;
+  animation-delay: 0.1s;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-opacity .3s 2 alternate ease-in;
-  animation-delay: .3s;
+  animation: sparks-opacity 0.3s 2 alternate ease-in;
+  animation-delay: 0.3s;
 }
 
 /* Like icon end */
@@ -352,7 +352,7 @@
 }
 
 #content__save-submit-dialog::backdrop {
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .save-submit__request-section {
@@ -395,7 +395,7 @@
   font-size: 14px;
   position: relative;
   overflow: hidden;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .is-button:hover {
@@ -408,7 +408,7 @@
   inset: 0;
   background-color: var(--main-color);
   translate: -100% 0 0;
-  transition: translate .5s ease-in-out;
+  transition: translate 0.5s ease-in-out;
 }
 
 .is-button:hover::before {
@@ -444,15 +444,15 @@
 }
 
 .content__stage-card:nth-child(7) .stage-card__image {
-  filter: grayscale(0.78) ;
+  filter: grayscale(0.78);
 }
 
 .content__stage-card:nth-child(8) .stage-card__image {
-  filter: brightness(1.81) contrast(1.3) ;
+  filter: brightness(1.81) contrast(1.3);
 }
 
 @media (width >= 768px) {
-
+  
   .content {
     inline-size: 700px;
   }

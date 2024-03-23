@@ -1,15 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --bg-image: repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px),
-                repeating-linear-gradient(#000 0, #000 2px, transparent 2px, transparent 4px),
-                linear-gradient(#007F0C, #004306);
+  --bg-image: repeating-linear-gradient(
+      90deg,
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#007f0c, #004306);
 
-    --bg-color: #000;
-    --main-color: #00CC14;
+  --bg-color: #000;
+  --main-color: #00cc14;
 
-    --button-content-color: #00CC14;
+  --button-content-color: #00cc14;
 
-    --heart-contour-color: #00CC14;
-    --heart-main-body-color: #f00;
+  --heart-contour-color: #00cc14;
+  --heart-main-body-color: #f00;
+
+  --variable-font-weight-title: 785;
+  --variable-font-weight-text: 465;
 }
