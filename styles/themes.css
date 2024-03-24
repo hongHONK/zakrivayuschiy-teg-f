@@ -7,7 +7,7 @@
 
 @media (prefers-color-scheme: light) {
   
-    :root {
+  :root {
     --bg-image: repeating-linear-gradient(
         90deg,
         #d3d3d3 0,
@@ -38,7 +38,7 @@
 
 @media (prefers-color-scheme: dark) {
   
-    :root {
+  :root {
     --bg-image: repeating-linear-gradient(
         90deg,
         #000 0,
