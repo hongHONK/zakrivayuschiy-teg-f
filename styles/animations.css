@@ -19,13 +19,13 @@
     transform: translateX(0);
   }
 
-  50% {
+  to {
     transform: translateX(4px);
   }
 
-  to {
+  /* to {
     transform: translateX(0);
-  }
+  } */
 }
 
 @keyframes heart-scale {
